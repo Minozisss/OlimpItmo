@@ -8,5 +8,6 @@
 import SwiftUI
 
 enum Pages: Hashable {
+    case main
     case article(Article)
 }

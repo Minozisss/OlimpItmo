@@ -4,6 +4,7 @@ import SDWebImageSwiftUI
 
 struct NewsView: View {
     // MARK: - Properties
+    
     @State var vm = NewsViewModel()
     @Binding var path: NavigationPath
     
@@ -57,6 +58,7 @@ struct NewsView: View {
         }
         
         .buttonStyle(.plain)
+        .navigationBarBackButtonHidden(true)
         .background(.secondary.opacity(0.2))
         .alert("Ошибка",
                isPresented: $vm.showError,
